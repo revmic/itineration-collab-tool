@@ -1,0 +1,158 @@
+
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* general */
+a {
+	color:#777;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+/* body */
+body {
+	background:#fafafa;
+	color:#555;
+	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+}
+
+/* header */
+#header {
+	border-top:7px solid #505559;
+	border-bottom:3px solid #999;
+	height:50px;
+	margin:0 auto;
+	width:75%;
+	padding: 30px 0;
+	background: #B0E0E6;
+}
+#header h1 {
+	color:#0C3864;
+	font-size:300%;
+	letter-spacing:-3px;
+	float:left;
+	padding-left:5px;
+	margin-bottom:-20px;
+}
+#header h2 {
+	color:#CCC;
+	font-size:200%;
+	letter-spacing:-2px;
+	float:left;
+}
+#header h3 {
+	font-size:100%;
+	letter-spacing:-1px;
+	float:right;
+}
+#header form {
+    float: right; 
+    margin-right: 15px; 
+    height: 20px; 
+    padding-top: 8px;
+}
+#header form label {
+    display: inline-block; 
+    margin: 0 2px;
+}
+#header form input {
+}
+#header form #username, 
+#header form #pwd {
+    display: block;
+    width: 150px;
+    border: 1px solid #eee;
+    padding: 3px 0 3px 0;
+    margin-bottom: -1px;
+}
+#header form .auth {
+    height: 23px;
+    vertical-align: bottom;
+    background: #0C3864; 
+    color: #fff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 5px;    
+    border-radius: 5px;
+}
+
+/* navigation */
+#navigation {
+	background:#fafafa;
+	border-right:1px solid #999;
+	margin:0 auto;
+	width:75%;
+	height:50px;
+	list-style:none;
+}
+#navigation li {
+	border-left:1px solid #999;
+	float:left;
+	width:16.56%;
+	list-style:none;
+}
+#navigation a {
+	color:#555;
+	display:block;
+	line-height:50px;
+	text-align:center;
+}
+#navigation a:hover {
+	background:#e3e3e3;
+	color:#0C3864;
+}
+#navigation .active {
+	background:#e3e3e3;
+	color:#777;
+}
+
+
+/* content */
+#content {
+	height:auto;
+	margin:0 auto;
+	padding:0 0 20px;
+	width:75%;
+}
+#content h1 {
+	border-bottom:1px dashed #999;
+	font-size:1.8em;
+	padding:20px 0 0;
+}
+#content p {
+	padding:20px 20px 0;
+}
+
+#content form #search {
+    height: 20px;
+    vertical-align: bottom;
+    background: #0C3864; 
+    color: #fff;
+    border: 1px solid #505559;
+    -moz-border-radius: 5px;    
+    border-radius: 5px;
+}
+#content form #search_text {
+    height: 20px;
+    vertical-align: bottom;
+    background: #B0E0E6; 
+    border: 1px solid #505559;
+    -moz-border-radius: 5px;    
+    border-radius: 5px;
+}
+
+/* footer */
+#footer {
+	border-top:1px solid #999; 
+	height:50px;
+	margin:0 auto;
+	padding:10px;
+	text-align:right;
+	width:75%;
+}
