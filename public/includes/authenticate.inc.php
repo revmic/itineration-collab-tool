@@ -9,7 +9,7 @@ if (isset($_POST['login'])) {
 	$username = trim($_POST['username']);
 	/***	plain text passwords    ***/
 	$password = trim($_POST['pwd']);
-	$userlist = '/Users/mhilema/Sites/collab-tool/private/unencrypted.txt';
+	$userlist = '../private/unencrypted.txt';
 	$found = false;
 
 

@@ -10,7 +10,7 @@ if(isset($_POST['logout'])) {
 
 	// end session and redirect
 	session_destroy();
-	header('Location: http://localhost/~mhilema/collab-tool/public');
+	header('Location: index.php');
 	exit;
 }
 ?>

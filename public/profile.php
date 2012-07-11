@@ -14,6 +14,5 @@ else
 
 echo "<img src='images/blank.gif' width='300' height='250' alt='No Photo' />";
 
-
 include('templates/footer.php');
 ?>
