@@ -2,7 +2,7 @@
 
 $page_title = 'Projects';
 include('templates/header.php');
-include('templates/menu.php');
+include('templates/nav.php');
 ?>
 
 <h1>Projects</h1>

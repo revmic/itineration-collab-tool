@@ -1,17 +1,13 @@
 <?php
-$page_title = 'Projects';
+$page_title = 'Register';
 include('templates/header.php');
-include('templates/menu.php');
+include('templates/nav.php');
 
-if (isset($_POST['register'])) {
-	$username = trim($_POST['username']);
-	$password = trim($_POST['pwd']);
-	$retyped = trim($_POST['retype']);
-	$userfile = '/Users/mhilema/Sites/tutorials/phpsols/private/encrypted.txt';
+//require_once('../includes/register_user_text.inc.php');
 
-	require_once('../includes/register_user_text.inc.php');
-}
 ?>
+
+<div id="content">
 	<h1>Register User</h1>
 	<?php
 	if (isset($result) || isset($errors)) {
@@ -25,7 +21,7 @@ if (isset($_POST['register'])) {
 		echo '</ul>';
 	}
 	?>
-	<form id="register_form" method="post" action="">
+	<form id="register_form" class="content" method="post" action="">
 		<p>
 			<label for="username">Username:</label>
 			<input type="text" name="username" id="username">
@@ -42,4 +38,6 @@ if (isset($_POST['register'])) {
 			<input name="register" type="submit" id="register" value="Register">
 		</p>
 	</form>
+</div>
+
 <?php include('templates/footer.php'); ?>

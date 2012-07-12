@@ -2,7 +2,7 @@
 
 $page_title = 'Collaborators';
 include('templates/header.php');
-include('templates/menu.php');
+include('templates/nav.php');
 
 echo "<h1>Collaborators</h1>";
 

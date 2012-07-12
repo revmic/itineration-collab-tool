@@ -43,10 +43,13 @@ require_once("includes/logout.inc.php");
 </head>
 
 <body>
+
+<div id="containter">
 	<div id="header">
-		<h1>Collaboration Tool</h1>
-<!--		<h2>Connecting People</h2> -->
+		<h1>Itinerate</h1>
+		<h2>Collaboration Platform</h2>
 		<?php 
+		// prints form in top right of header and auth error if any.
 		echo $top_right_form;
 		if($error)
 			echo "<form class='auth'><h3>" . $error . "</h3></form>"; 
