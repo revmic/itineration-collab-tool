@@ -7,21 +7,20 @@
 
 /* general */
 a {
-	color:#777;
+	color:#0C3864;
 	text-decoration:none;
 }
 
 a:hover {
-	color:#333;
+	color:#990000;
 	text-decoration:none;
 }
 
 /* BODY */
 body {
 	background:#fafafa;
-	color:#555;
 	font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 0.9em;
 /*	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;*/
 }
 
@@ -32,11 +31,14 @@ body {
 	height:50px;
 	margin:0 auto;
 	padding:0 75px 12px 75px;
-	background: #B0E0E6;
+	background: #99ADD6;
+	background-image:url('../images/itineration');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 #header h1 {
 	color:#0C3864;
-	font-size:325%;
+	font-size:355%;
 	letter-spacing:-3px;
 	float:left;
 	padding-left:5px;
@@ -49,10 +51,18 @@ body {
 	float:left;
 }
 #header h3 {
-	font-size:100%;
-	letter-spacing:-1px;
+	font-size:90%;
+	letter-spacing:0px;
 	float:right;
-	padding:10px 180px 0 0;
+	padding:10px 160px 10px 0;
+}
+#header a {
+	color:#113689;
+}
+#header a:hover {
+	color:#fff;
+	background-color: #0C3864;
+	border: 1px solid #fff;
 }
 #header form {
     float: right; 
@@ -79,28 +89,157 @@ body {
     vertical-align: bottom;
     background: #0C3864; 
     color: #fff;
-    border: 1px solid #ddd;
-    -moz-border-radius: 5px;    
-    border-radius: 5px;
+    border: 1px solid #fff;
+    -moz-border-radius: 3px;    
+    border-radius: 3px;
+    padding:1px;
 }
+
+
+/*** TOP NAV ***/
+#cssmenu{ 
+	height:37px;
+	display:block;
+	width:150;
+	margin:15px auto;  
+	border:1px solid; 
+	border-radius:5px;
+	padding-left: 66px; 
+} 
+#cssmenu > ul {
+	list-style:inside none; 
+	padding:0; 
+	margin:0;
+} 
+#cssmenu > ul > li {
+	list-style:inside none; 
+	padding:0; 
+	margin:0; 
+	float:left; 
+	display:block; 
+	position:relative;
+} 
+#cssmenu > ul > li > a{ 
+	outline:none; 
+	display:block; 
+	position:relative; 
+	padding:12px 20px; 
+	font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+/*	font:bold 13px/100% Arial, Helvetica, sans-serif; */
+	text-align:center; 
+	text-decoration:none; 
+	text-shadow:1px 1px 0 rgba(0,0,0, 0.4); 
+} 
+#cssmenu > ul > li:first-child > a{
+	border-radius:5px 0 0 5px;
+} 
+#cssmenu > ul > li > a:after{ 
+	content:''; position:absolute; 
+	border-right:1px solid; 
+	top:-1px; bottom:-1px; 
+	right:-2px; 
+	z-index:99; 
+} 
+#cssmenu ul li.has-sub:hover > a:after{
+	top:0; bottom:0;
+} 
+#cssmenu > ul > li.has-sub > a:before{ 
+	content:''; 
+	position:absolute; 
+	top:18px; 
+	right:6px; 
+	border:5px solid transparent; 
+	border-top:5px solid #fff; 
+} 
+#cssmenu > ul > li.has-sub:hover > a:before{
+	top:19px;
+} 
+#cssmenu ul li.has-sub:hover > a{ 
+	background:#505559; 
+	border-color:#3f3f3f; 
+	padding-bottom:13px; 
+	padding-top:13px; 
+	top:-1px; 
+	z-index:999; 
+} 
+#cssmenu ul li.has-sub:hover > ul, #cssmenu ul li.has-sub:hover > div{
+	display:block;
+} 
+#cssmenu ul li.has-sub > a:hover{
+	background:#505559; 
+	border-color:#3f3f3f;
+} 
+#cssmenu ul li > ul, #cssmenu ul li > div{ 
+	display:none; 
+	width:auto; 
+	position:absolute; 
+	top:38px; 
+	padding:10px 0; 
+	background:#505559; 
+	border-radius:0 0 5px 5px; 
+	z-index:999; 
+} 
+#cssmenu ul li > ul{
+	width:200px;
+} 
+#cssmenu ul li > ul li{
+	display:block; 
+	list-style:inside none; 
+	padding:0; 
+	margin:0; 
+	position:relative;
+} 
+#cssmenu ul li > ul li a{ 
+	outline:none; 
+	display:block; 
+	position:relative; 
+	margin:0; 
+	padding:8px 20px; 
+	font:10pt Arial, Helvetica, sans-serif; color:#fff; 
+	text-decoration:none; 
+	text-shadow:1px 1px 0 rgba(0,0,0, 0.5); 
+} 
+
+#cssmenu, #cssmenu > ul > li > ul > li a:hover{ 
+	background:#3e698c; 
+	background:-moz-linear-gradient(top,  #0C3864 0%, #20496A 100%); 
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C3864), color-stop(100%,#20496A)); 
+	background:-webkit-linear-gradient(top,  #0C3864 0%,#20496A 100%); 
+	background:-o-linear-gradient(top, #0C3864 0%,#20496A 100%); 
+	background:-ms-linear-gradient(top, #0C3864 0%,#20496A 100%); 
+	background:linear-gradient(top,  #0C3864 0%,#20496A 100%); 
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#0C3864', endColorstr='#20496A',GradientType=0 ); 
+} 
+#cssmenu{
+	border-color:#1b313d;
+} 
+#cssmenu > ul > li > a{
+	border-right:1px solid #1b313d; 
+	color:#fff;
+} 
+#cssmenu > ul > li > a:after{
+	border-color:#6696bd;
+} 
+#cssmenu > ul > li > a:hover{
+	background:#505559;
+}
+
 
 
 /*** CONTENT ***/
 #content {
-	float:top;
 	text-align: left;
 	margin:0 auto;
-	padding:10px 80px 20px 260px;
+	padding:0 80px 20px 75px;
 }
 #content h1 {
 	border-bottom:1px dashed #999;
 	font-size:1.3em;
-	padding-right: 10px;
-	text-align: right;
+	padding-left: 10px;
 	} 
 #content h2 {
 	font-size:1.2em;
-	text-align: left;
 }
 #content p {
 	padding:12px 12px 0;
@@ -123,45 +262,28 @@ body {
     -moz-border-radius: 5px;    
     border-radius: 5px;
 }
-#content a:hover {
-	color:#113689;
-}
 
 /* footer */
 #footer {
-	font-size: 0.8em;
 	border-top:1px dashed #999; 
+	font-size: 0.8em;
 	height:50px;
-	margin:0 auto;
-	padding-right: 75px;
-	padding-top: 1px;
+	padding:2px 80px 20px 75px;
 	text-align:right;
 }
 
 
 
-/* CSS Menu Maker */
-
-/* Some stylesheet reset
-ul#cssmenu > ul, #cssmenu > ul ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-	line-height: 1;
-}
-
-/* The container */
+/*
 #cssmenu > ul, #cssmenu > ul ul {
 	display: block;
 	float: left; /* needed to get main content next to nav */
-/*	position: relative; */
+/*	position: relative; *
 	width: 150px;
 	padding-left: 75px;
-/*	border-right:1px dashed #505559; */
+/*	border-right:1px dashed #505559; 
 }
-
-	/* The list elements which contain the links */
+	/* The list elements which contain the links *
 	#cssmenu > ul li {
 		display: block;
 		position: relative; 
@@ -169,10 +291,9 @@ ul#cssmenu > ul, #cssmenu > ul ul {
 		padding: 0;
 		width: 150px;	
 	}
-
-		/* General link styling */
+		/* General link styling *
 		#cssmenu > ul li a {
-			/* Layout */
+			/* Layout *
 			display: block;
 			position: relative;
 			margin: 0;
@@ -181,47 +302,43 @@ ul#cssmenu > ul, #cssmenu > ul ul {
 			padding: 11px 20px;
 			width: 110px;
 
-			/* Typography */
+			/* Typography *
 			font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
 			color: #d8d8d8;
 			text-decoration: none;
 			text-transform: uppercase;
-		/*	text-shadow: 0 1px 1px #000; */
+		/*	text-shadow: 0 1px 1px #000; *
 			font-size: 13px;
 			font-weight: 300;
 
-			/* Background & effects */
-			background: #505559; /*#282828*/
+			/* Background & effects *
+			background: #505559; /*#282828*
 		}
-
-		/* Rounded corners for the first link of the menu/submenus */
+		/* Rounded corners for the first link of the menu/submenus *
 		#cssmenu > ul li:first-child>a {
 			border-top-left-radius: 4px;
 			border-top-right-radius: 4px;
 			border-top: 0;
 		}
-
-		/* Rounded corners for the last link of the menu/submenus */
+		/* Rounded corners for the last link of the menu/submenus *
 		#cssmenu > ul li:last-child>a {
 			border-bottom-left-radius: 4px;
 			border-bottom-right-radius: 4px;
 			border-bottom: 0;
 		}
 
-
-		/* The hover state of the menu/submenu links */
+		/* The hover state of the menu/submenu links *
 		#cssmenu > ul li>a:hover, #cssmenu > ul li:hover>a {
 			color: #fff;
 			text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
-			background: #1A33CC;
-			background: -webkit-linear-gradient(bottom, #1A33CC, #113689);
-			background: -ms-linear-gradient(bottom, #1A33CC, #113689); 
-			background: -moz-linear-gradient(bottom, #1A33CC, #113689);
-			background: -o-linear-gradient(bottom, #1A33CC, #113689);
+			background: #003399;
+			background: -webkit-linear-gradient(bottom, #003399, #0C3864);
+			background: -ms-linear-gradient(bottom, #003399, #0C3864); 
+			background: -moz-linear-gradient(bottom, #003399, #0C3864);
+			background: -o-linear-gradient(bottom, #003399, #0C3864);
 			border-color: transparent;
 		}
-
-		/* The arrow indicating a submenu */
+		/* The arrow indicating a submenu *
 		#cssmenu > ul .has-sub>a::after {
 			content: '';
 			position: absolute;
@@ -230,12 +347,11 @@ ul#cssmenu > ul, #cssmenu > ul ul {
 			width: 0px;
 			height: 0px;
 
-			/* Creating the arrow using borders */
+			/* Creating the arrow using borders *
 			border: 4px solid transparent;
 			border-left: 4px solid #d8d8d8; 
 		}
-
-		/* The same arrow, but with a darker color, to create the shadow effect */
+		/* The same arrow, but with a darker color, to create the shadow effect *
 		#cssmenu > ul .has-sub>a::before {
 			content: '';
 			position: absolute;
@@ -244,70 +360,43 @@ ul#cssmenu > ul, #cssmenu > ul ul {
 			width: 0px;
 			height: 0px;
 
-			/* Creating the arrow using borders */
+			/* Creating the arrow using borders *
 			border: 4px solid transparent;
 			border-left: 4px solid #000;
 		}
-
-		/* Changing the color of the arrow on hover */
+		/* Changing the color of the arrow on hover *
 		#cssmenu > ul li>a:hover::after, #cssmenu > ul li:hover>a::after {
 			border-left: 4px solid #fff;
 		}
-
 		#cssmenu > ul li>a:hover::before, #cssmenu > ul li:hover>a::before {
 			border-left: 4px solid rgba(0, 0, 0, .3);
 		}
-
 	
-		/* THE SUBMENUS */
+		/* THE SUBMENUS *
 		#cssmenu > ul ul {
 			position: absolute;
 			left: 150px;
 			top: -9999px;
 			padding-left: 5px;
 			opacity: 0;
-			/* The fade effect, created using an opacity transition */
+			/* The fade effect, created using an opacity transition *
 			-webkit-transition: opacity .3s ease-in;
 			-moz-transition: opacity .3s ease-in;
 			-o-transition: opacity .3s ease-in;
 			-ms-transition: opacity .3s ease-in;
 		}
-
-		/* Showing the submenu when the user is hovering the parent link */
+		/* Showing the submenu when the user is hovering the parent link *
 		#cssmenu > ul li:hover>ul {
 			top: 0px;
 			opacity: 1;
 		}
 
-
-
-/* navigation
-#navigation {
-	background:#fafafa;
-	border-right:1px solid #999;
-	margin:0 auto;
-	width:75%;
-	height:50px;
-	list-style:none;
-}
-#navigation li {
-	border-left:1px solid #999;
-	float:left;
-	width:16.56%;
-	list-style:none;
-}
-#navigation a {
-	color:#555;
-	display:block;
-	line-height:50px;
-	text-align:center;
-}
-#navigation a:hover {
-	background:#e3e3e3;
-	color:#0C3864;
-}
-#navigation .active {
-	background:#e3e3e3;
-	color:#777;
+/* Some stylesheet reset
+ul#cssmenu > ul, #cssmenu > ul ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	line-height: 1;
 }
 */

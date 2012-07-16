@@ -1,4 +1,4 @@
-	<div id="navigation">
+	<div id="cssmenu">
 		<ul>
 			<li><a href="index.php">Home Page</a></li>
 			<li><a href="projects.php">Projects</a></li>

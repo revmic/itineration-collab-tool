@@ -2,7 +2,7 @@
 
 $page_title = 'Profile';
 include('templates/header.php');
-include('templates/nav.php');
+include('templates/nav_top.php');
 
 if (isset($_SESSION['username'])) {
 	$active_user = $_SESSION['username'];
@@ -14,8 +14,12 @@ else {
 	exit;
 }
 ?>
+
 <div id="content">
-	<div id="info" style='float:left'>
+	<div id="pic">
+		<img src='images/blank.gif' width='200' height='163' alt='No Photo' />
+	</div>
+	<div id="info">	
 		<ul>
 			<h2>Michael Hileman</h2>
 			<p>Contact Info -</p>
@@ -26,11 +30,10 @@ else {
 			<p>Professional Affiliations -</p>
 			<li>Southern Illinois University</li>
 		</ul>
-		<p>Biography -</p>
-		<p>And so on...</p>
-	</div>
-	<div id="profile" style='float:right'>
-		<img src='images/blank.gif' width='200' height='163' alt='No Photo' style='float:right' />
+		<div id="bio">
+			<p>Biography -</p>
+			<p>And so on...</p>
+		</div>
 	</div>
 </div>
 

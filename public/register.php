@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Register';
 include('templates/header.php');
-include('templates/nav.php');
+include('templates/nav_top.php');
 
 //require_once('../includes/register_user_text.inc.php');
 

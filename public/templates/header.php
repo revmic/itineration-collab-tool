@@ -46,8 +46,8 @@ require_once("includes/logout.inc.php");
 
 <div id="containter">
 	<div id="header">
-		<h1>Itinerate</h1>
-		<h2>Collaboration Platform</h2>
+		<a href="index.php"><h1>Itinerate</h1></a>
+<!--		<h2>Collaboration Platform</h2> -->
 		<?php 
 		// prints form in top right of header and auth error if any.
 		echo $top_right_form;

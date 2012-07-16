@@ -3,7 +3,7 @@
 $page_title = 'Itinerate Home';
 include('templates/header.php');
 //include('templates/menu.php');
-include('templates/nav.php');
+include('templates/nav_top.php');
 ?>
 
 <div id="content">
