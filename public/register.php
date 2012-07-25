@@ -8,7 +8,7 @@ include('templates/nav_top.php');
 ?>
 
 <div id="content">
-	<h1>Register User</h1>
+	<h1>Create an Account</h1>
 	<?php
 	if (isset($result) || isset($errors)) {
 		echo '<ul>';
@@ -21,23 +21,27 @@ include('templates/nav_top.php');
 		echo '</ul>';
 	}
 	?>
-	<form id="register_form" class="content" method="post" action="">
-		<p>
-			<label for="username">Username:</label>
-			<input type="text" name="username" id="username">
-		</p>
-		<p>
-			<label for="pwd">Password:</label>
-			<input type="password" name="pwd" id="pwd">
-		</p>
-		<p>
-			<label for="pwd">Retype Password:</label>
-			<input type="password" name="retype" id="retype">
-		</p>
-		<p>
+	<div id='register'>
+		<form id="register" name="register" method="post" action="">
+			
+		<fieldset>
+			<label for='first' style='float:left'>Name</label><br>
+			<input type='text' value='first' style="width:152px;float:left">
+			<input type='text' value='last' style="width:152px;float:right">
+
+			<label>Email </label><label class='small'>(This will be your username)</label>
+			<input type='text' name='email' id='email' maxlength="50" />
+
+			<label >Password</label>
+			<input type='password' name='password' id='password' maxlength="50" />
+			<label>Confirm Password</label>
+			<input type='password' name='conf_pass' id='conf_pass' maxlength="50" />
+
 			<input name="register" type="submit" id="register" value="Register">
-		</p>
-	</form>
-</div>
+		</fieldset>
+		
+		</form>
+	</div>
+	<!-- closing div misaligns footer, I think -->
 
 <?php include('templates/footer.php'); ?>

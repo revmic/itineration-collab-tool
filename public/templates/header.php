@@ -12,7 +12,7 @@ if (isset($_SESSION['uid'])) {
 // If there is an open session
 // Display the username and Log Out Form
 	$top_right_form = <<<FORM
-<form id="auth" method="post" action="">
+<form id="authenticate" method="post" action="">
 	<label>Welcome, $username!</label>
 	<a href="profile.php?user=$username">Profile</a>
 	<input type="submit" name="logout" id="logout" class="auth" value="Log Out">
@@ -26,6 +26,7 @@ else {
 	<label>Email: <input type="text" name="username" id="username"></label>
 	<label>Password: <input type="password" name="pwd" id="pwd"></label>
 	<input type="submit" name="login" id="login" class="auth" value="Log in">
+	<a href="register.php">Sign Up</a>
 </form>
 FORM;
 }
@@ -38,20 +39,23 @@ require_once("includes/logout.inc.php");
 <html>
 <head>
 	<title><?php echo $page_title;?></title>	
-	<link rel="shortcut icon" href="image/favicon.ico" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 </head>
 
 <body>
 
-<div id="containter">
+<div id="head_container">
 	<div id="header">
+		<h1>Itinerate</h1>
+<!--	causing funky reposition of 'Itinerate'
 		<a href="index.php"><h1>Itinerate</h1></a>
-<!--		<h2>Collaboration Platform</h2> -->
+			<h2>Collaboration Platform</h2> -->
 		<?php 
 		// prints form in top right of header and auth error if any.
 		echo $top_right_form;
 		if($error)
-			echo "<form class='auth'><h3>" . $error . "</h3></form>"; 
+			echo "<form class='auth'><h3>".$error."</h3></form>"; 
 		?>
 	</div>
+</div>

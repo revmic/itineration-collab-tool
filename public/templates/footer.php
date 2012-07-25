@@ -1,8 +1,8 @@
 <br>
 <br>
-	<div id="footer">
-		<p>Copyright &copy; 2012 | Designed by RevMic</p>
-	</div>
-</div> <!-- closing containter -->
+<br>
+<div id="footer">
+	<p>Copyright &copy; 2012 | Created by RevMic</p>
+</div>
 </body>
 </html>

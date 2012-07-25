@@ -1,4 +1,4 @@
-collab-tool
+itinerate
 ===========
 
-Collaboration tool used and inspired by itineration.org community
+Collaboration platform used and inspired by itineration.org community

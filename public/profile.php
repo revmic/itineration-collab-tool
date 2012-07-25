@@ -18,7 +18,9 @@ else {
 <div id="content">
 	<div id="pic">
 		<img src='images/blank.gif' width='200' height='163' alt='No Photo' />
+		<br>
 	</div>
+
 	<div id="info">	
 		<ul>
 			<h2>Michael Hileman</h2>
@@ -31,10 +33,9 @@ else {
 			<li>Southern Illinois University</li>
 		</ul>
 		<div id="bio">
-			<p>Biography -</p>
+			<p>Biography - michael is a man who lives in Edwardsville il. he is currently working on itinerate, a project that helps folks collaborate.</p>
 			<p>And so on...</p>
 		</div>
 	</div>
-</div>
-
+<!-- closing div misaligns footer, I think -->
 <?php include('templates/footer.php'); ?>
