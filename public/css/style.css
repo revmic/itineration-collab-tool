@@ -15,18 +15,28 @@ a:hover {
 	text-decoration:none;
 }
 
+
+#wrapper {
+	min-height:100%;
+	posiiton:relative;
+}
+
 /* BODY */
 body {
 	border:0;
-	padding:0;
+	padding-bottom:50;
+	height:100%;
 	margin:0;
 	background:#fafafa;
 	font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
 	font-size: 0.9em;
-/*	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;*/
-} /*
+/*	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif; */
+}
+
+
 
 /* HEADER */
+
 #head_container {
 	width:100%;
 	height:55px;
@@ -41,10 +51,9 @@ body {
 	position:relative;
 	margin-left:auto;
 	margin-right:auto;
-	background-image:url('../images/itineration');
+/*	background-image:url('../images/itineration');
 	background-size: contain;
-	background-repeat: no-repeat;
-
+	background-repeat: no-repeat;	*/
 }
 #header h1 {
 	color:#0C3864;
@@ -105,6 +114,9 @@ body {
 }
 
 
+
+/*** TOP NAV ***/
+
 /*{
 	width:100%;
 	margin-left:auto;
@@ -129,15 +141,13 @@ body {
 	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#0C3864', endColorstr='#20496A',GradientType=0 ); 
 }
 
-/*** TOP NAV ***/
+
 #cssmenu{ 
 	width:900px;
 	position:relative;
 	margin:15px auto -10px auto;  
 	border:1px solid; 
 	border-radius:3px;
-	
-
 /*	padding-left: 66px; */
 } 
 #cssmenu > ul {
@@ -234,7 +244,6 @@ body {
 	text-decoration:none; 
 	text-shadow:1px 1px 0 rgba(0,0,0, 0.5); 
 } 
-
 #cssmenu{
 	border-color:#1b313d;
 } 
@@ -263,6 +272,8 @@ body {
 
 
 /*** CONTENT ***/
+
+
 #content {
 	width:900px;
 	text-align: left;
@@ -294,7 +305,6 @@ body {
   	height:18px;
   	border: 1px solid #999;
 }
-
 #content form #search {
     height: 20px;
     vertical-align: bottom;
@@ -328,6 +338,7 @@ body {
 	background: #DCDCDC;
 }
 #register label {
+	padding-top:0px;
 	padding-bottom:0px;
 	font-weight: bold;
 }
@@ -344,10 +355,10 @@ body {
 #register input[type="text"]:focus,
 #register textarea:focus
 {
-  color : #009;
-  border : 1px solid #990000;
-  background-color : #ffff99;
-  font-weight:bold;
+  	color : #009;
+  	border : 1px solid #990000;
+  	background-color : #ffff99;
+  	font-weight:bold;
 }
 
 
@@ -357,13 +368,17 @@ body {
 
 /* footer */
 #footer {
+	position:absolute;
+	bottom:0;
 	width:900px;
-	position:relative;
+	height:50px;
 	border-top:1px dashed #999; 
 	font-size: 0.8em;
-	height:50px;
 	text-align:right;
 }
+
+
+
 
 
 

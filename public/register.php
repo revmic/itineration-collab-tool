@@ -21,6 +21,7 @@ include('templates/nav_top.php');
 		echo '</ul>';
 	}
 	?>
+	<br>
 	<div id='register'>
 		<form id="register" name="register" method="post" action="">
 			

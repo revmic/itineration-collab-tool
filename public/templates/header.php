@@ -45,6 +45,7 @@ require_once("includes/logout.inc.php");
 
 <body>
 
+<div id='wrapper'>
 <div id="head_container">
 	<div id="header">
 		<h1>Itinerate</h1>
